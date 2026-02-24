@@ -226,6 +226,56 @@ body {
 }
 .content {
     display: none;
-
 }
+.story-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.story-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.story-card:hover {
+  transform: scale(1.02);
+}
+
+.story-card h3 {
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+.story-card p {
+  line-height: 1.8;
+}
+.story-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.story-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.story-card:hover {
+  transform: scale(1.02);
+}
+
+.story-card h3 {
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+.story-card p {
+  line-height: 1.8;
+}
+
 
