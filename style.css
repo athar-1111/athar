@@ -1,0 +1,179 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+}
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+header {
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+nav button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(131, 127, 127);
+  color: #203a43;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #ffd369;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: none;
+  max-width: 600px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  animation: fade 0.4s ease-in-out;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 15px;
+  line-height: 1.9;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+.hadith-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.hadith-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hadith-container::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+.dua-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.dua-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dua-container::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+.azkar-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.azkar-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.azkar-container::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+    background-image: url("athar.png");
+    background-size: cover;        /* تغطي الشاشة كاملة */
+    background-position: center;   /* توسيط الصورة */
+    background-repeat: no-repeat;  /* بدون تكرار */
+    background-attachment: fixed;  /* حركة احترافية عند السكروول */
+}
+.tasbeeh {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 300px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.counter {
+    font-size: 50px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tasbeeh button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.reset {
+    background: #ff5757;
+    color: white;
+}
+.content {
+    display: none;
+}
