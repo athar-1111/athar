@@ -57,3 +57,22 @@ fetch("https://api.alquran.cloud/v1/surah")
 });
 
 });
+function loadSurah(number) {
+
+fetch(`https://api.alquran.cloud/v1/surah/${number}`)
+.then(response => response.json())
+.then(data => {
+
+    const container = document.getElementById("quran-container");
+    container.innerHTML = "";
+
+    data.data.ayahs.forEach(ayah => {
+        container.innerHTML += `
+            <p>${ayah.text} (${ayah.numberInSurah})</p>
+        `;
+    });
+
+});
+
+}
+
