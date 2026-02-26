@@ -254,65 +254,10 @@
   </div>
 </section>
 </main>
-<script>
-  
-<script src="script.js"></script>
- <h1>القرآن الكريم</h1>
-
-<div id="surahList"></div>
-<div id="ayahList"></div>
-
-<audio id="audioPlayer" controls style="display:none; margin-top:20px;"></audio>
-
-<script>
- 
-// جلب جميع السور
-fetch("https://api.alquran.cloud/v1/surah")
-.then(res => res.json())
-.then(data => {
-    let surahs = data.data;
-    let container = document.getElementById("surahList");
-
-    surahs.forEach(surah => {
-        let btn = document.createElement("button");
-        btn.innerText = surah.number + " - " + surah.name;
-        btn.style.margin = "5px";
-        btn.onclick = () => loadSurah(surah.number);
-        container.appendChild(btn);
-    });
-});
-
-// تحميل سورة كاملة
-function loadSurah(number){
-    fetch("https://api.alquran.cloud/v1/surah/" + number)
-    .then(res => res.json())
-    .then(data => {
-        let ayahs = data.data.ayahs;
-        let container = document.getElementById("ayahList");
-        container.innerHTML = "";
-
-        ayahs.forEach(ayah => {
-            let p = document.createElement("p");
-            p.innerText = ayah.text;
-            p.style.cursor = "pointer";
-            p.onclick = () => playAyah(ayah.number);
-            container.appendChild(p);
-        });
-    });
-}
-
-// تشغيل الآية صوتياً
-function playAyah(ayahNumber){
-    let url = "https://cdn.islamic.network/quran/audio/128/ar.alafasy/" + ayahNumber + ".mp3";
-    let player = document.getElementById("audioPlayer");
-    player.src = url;
-    player.style.display = "block";
-    player.play();
-}
-  <script>
     
 </body>
 </html>
+
 
 
 
