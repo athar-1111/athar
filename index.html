@@ -256,8 +256,7 @@
 </main>
 
 <script src="script.js"></script>
-</body>
-  <h1>القرآن الكريم</h1>
+ <h1>القرآن الكريم</h1>
 
 <div id="surahList"></div>
 <div id="ayahList"></div>
@@ -265,6 +264,8 @@
 <audio id="audioPlayer" controls style="display:none; margin-top:20px;"></audio>
 
 <script>
+</body>
+ 
 // جلب جميع السور
 fetch("https://api.alquran.cloud/v1/surah")
 .then(res => res.json())
@@ -309,6 +310,7 @@ function playAyah(ayahNumber){
     player.play();
 }
 </html>
+
 
 
 
