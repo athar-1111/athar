@@ -277,6 +277,29 @@ body {
 .story-card p {
   line-height: 1.8;
 }
+/* عرض السكرول */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* خلفية السكرول */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+/* الجزء المتحرك */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ffd700, #ffae00);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* عند المرور عليه */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #fff200, #ff8c00);
+}
+
 
 
 
