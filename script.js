@@ -35,7 +35,8 @@ function resetTasbeeh() {
     document.getElementById("counter").innerText = count;
     localStorage.setItem("tasbeehCount", count);
 }
-const container = document.getElementById("quran-container");
+
+
 
 
 
